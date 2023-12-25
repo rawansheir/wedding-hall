@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Wedding hall Emy Land </title>
+  <link href="wedding.css" rel="stylesheet" />
+
+</head>
+
+<body style=" background-color:rgb(249, 242, 230) ;">
+
+  <header>
+    <nav class="header">
+      <img class="header-img" src="logo.jpeg">
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#submit">Submit</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+  <img src=" one.jpg " class="banner-img">
+  <br>
+
+<section id="contact">
+  <h3 class="contact-title"> Emyland</h3>
+  <h4 class="contact-title"> emyland200@gmail.com </h4>
+  <h4 class="contact-title"> phone number:0100100100</h4>
+  <p1 class="contact-text"> amy land is a wedding hall for any event <br>that will be weddining -engagement - katb kitab.
+    <br>
+    the hall is open air and part of the swimming pool.
+    <br>
+    the event can be during the day or at night , you can choose the time and view you like for your event and type of
+    event .
+  </p1>
+  <br>
+  <br>
+  <br>
+  <br>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h3 class="services-title"> "services provided by the hall" </h3>
+    <br>
+    <br>
+    <br>
+    <div class="service-container">
+      <img src="two.jpeg" class="service-img"> &nbsp &nbsp <p> The size hall is suffcient for 500 people,( Booking
+        15000 pound including video camera,drinks and sweets enough for invitations and music of DJ). </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="service-container">
+      <video src="Camera man.mp4" class="service-img"> </video>
+      <p> camerman is additional service provided by tha hall,which is photographing the party with a flying camera in the
+        sky in addition to the photographer who takes memorial photos </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="service-container">
+      <img src="four.jpeg" class="service-img">&nbsp&nbsp<p> The price of the Cake 1000 pound , you can choose the
+        shape of the cake you like with the colors and design you want </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="service-container">
+      <img src="there.jpeg" class="service-img">&nbsp&nbsp<p> musis, additional DJ musis you can add music player such
+        as drums man,piano,guitar and saxophone,and the service costs 1500 pounds </p>
+    </div>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</section>
+
+<section id="submit">
+  <h4 class="submit-title">"" Now you can register the form and we will contact you" </h4>
+  <br>
+  <br>
+  <br>
+  <form class="submit-form" id="form" action="index.php " method="post">
+    <br>
+    <br>
+
+    <label> name :</label>
+    <input textbox1 type=" text" id="name" name =" name " placeholder="rewan" required>
+    &nbsp&nbsp
+
+    <label>phone number:</label>
+    <input textbox3 type=" number " id="number" name=" number" maxlength="11" required>
+    <br><br>
+    <label> email :</label>
+    <input textbox2 type=" email" id="email" name=" email" placeholder="rewan@" required>
+    &nbsp&nbsp&nbsp
+    <label> event date :</label>
+    <input textbox4 type=" data"  id= "date" name=" date" palceholder=" 12/12/2023">
+    <br>
+    <br>
+
+    <p> what services would you like to check?</p>
+
+    <label>hall reservation </label>
+    <input checkbox1 type="checkbox"  id="services" name="hall reservation" value=" hall reservation">
+    <br>
+
+    <label>camerman </label>
+    <input checkbox2 type="checkbox" id="services" name="camerman" value="camerman">
+
+    <br>
+
+    <label>cake </label>
+    <input checkbox3 type="checkbox" id="services"  name="cake" value="cake">
+
+    <br>
+
+    <label>music</label>
+    <input checkbox4 type="checkbox" id="services"  name="music" value="music">
+
+
+    <br><br><br>
+
+    <button class="submit-button" >submit</button>
+    <br>
+    <br>
+  </form>
+  <script>
+    var form = document.getElementById('form')
+    form.addEventListener('submit',function(event) 
+    {
+     event.prevenDefault()
+     var name = document.getElementById('name').value 
+     console.log(event)
+     console.log(name )
+
+     var email = document.getElementById('email').value 
+     console.log(email)
+
+     var num = document.getElementsById('number').value 
+     console.log(number)
+
+     var date = document.getElementsById('date').value 
+     console.log(date)
+
+     var services = document.getElementById('services').value
+     console.log(services)
+
+
+    })
+    
+  </script>
+ 
+  <br>
+  <br>
+  <br>
+</section>
+</body>
+
+</html>
